@@ -1,0 +1,30 @@
+---
+title: "first_vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{first_vignette}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+  
+pkgdown:
+  as_is: true
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+### How do you load it?
+
+```{r setup}
+library(TemplatePKG)
+```
+
+### How do you use it?
+```{r}
+hello()
+add(1,3)
+```

@@ -1,0 +1,19 @@
+# Run to build the website
+pkgdown::build_site(devel=TRUE)
+
+roxygen2::roxygenise()
+
+# created README.md for Github landing page
+usethis::use_readme_md(open = FALSE)
+
+# creates LICENSE.md file
+usethis::use_mit_license("Seonyoung Kim")
+
+# creates NEWS.md file
+usethis::use_news_md(open = FALSE)
+
+# create a vignettes folder and vignettes/first_vignette.Rmd
+usethis::use_vignette("first_vignette")
+
+# create a vignettes/how_to_build_pkgdown_website.Rmd
+usethis::use_vignette("how_to_build_pkgdown_website")
